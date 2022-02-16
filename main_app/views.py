@@ -40,7 +40,7 @@ def add_watching(request, finch_id):
 
 class FinchCreate(CreateView):
   model = Finch
-  fields = '__all__'
+  fields = ['name', 'type', 'description', 'age']
 
 class FinchUpdate(UpdateView):
   model = Finch
